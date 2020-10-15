@@ -11,14 +11,15 @@ afdelingscode = {
 }
     
 
-df = pd.read_excel("vul_in.xlsx")
-elementIds = open('elementIds.txt', 'r').readlines() 
+df = pd.read_excel("Vul_in.xlsx")
+elementIds = open('elementIds.ini', 'r').readlines() 
 outFile = open('OUT.txt', 'w')
 
 # Clean up tel numbers
+df['Telefoonnummer'] = df['Telefoonnummer'].apply(str)
 df['Telefoonnummer'].replace(to_replace ='[ -/.]', value = '', regex = True, inplace=True) 
 df['Telefoonnummer'].replace(to_replace ='^(0032|32|\+320)', value = '+32', regex = True, inplace=True)
-df['Telefoonnummer'].replace(to_replace ='.*0(4[0-9]{8}|9[0-9]{7}).*', value = r'+32\1', regex = True, inplace=True)
+df['Telefoonnummer'].replace(to_replace ='.*0?(4[0-9]{8}|9[0-9]{7}).*', value = r'+32\1', regex = True, inplace=True)
 
 # Remove whitespaces
 df.replace(r'^\s+', '', regex=True, inplace=True) #front
@@ -37,7 +38,6 @@ df['Huisnummer'] = df['Huisnummer'].str.replace(r'(\D+)','')
 # Remove all non digits from postcode
 df['Postcode'] = df['Postcode'].apply(str)
 df['Postcode'] = df['Postcode'].str.replace(r'(\D+)','')
-print(df)
 
 
 for index, row in df.iterrows():
@@ -96,5 +96,4 @@ for index, row in df.iterrows():
 
 # TODO:
 # Documentatie scrijven voor noobs
-# Voorbeeld data in de vul_in.xlsx
 # pytoexe
