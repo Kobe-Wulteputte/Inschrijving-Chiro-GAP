@@ -7,7 +7,7 @@ afdelingscode = {
     'rakker': 84685,
     'topper': 84686,
     'kerel': 84687,
-    'aspi': 84688
+    'aspirant': 84688
 }
     
 
