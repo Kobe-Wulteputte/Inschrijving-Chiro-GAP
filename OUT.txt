@@ -1,0 +1,103 @@
+document.getElementById('NieuwePersoon_VoorNaam').value = "Spongebob"
+document.getElementById('NieuwePersoon_Naam').value = "SquarePants"
+document.getElementById('NieuwePersoon_GeboorteDatum').value = "11/09/2001"
+document.querySelectorAll("[id='NieuwePersoon_Geslacht']")[0].checked = true
+document.getElementById('PostNr').value = "9090"
+document.getElementById('PostNr').dispatchEvent(new CustomEvent("change"))
+await new Promise(r => setTimeout(r, 100))
+document.getElementById('StraatNaamNaam').value = "Kerkstraat"
+document.getElementById('HuisNr').value = "6"
+document.getElementById('Bus').value = "C"
+document.getElementById('WoonPlaatsNaam').value = "Melle"
+document.getElementById('CommunicatieInfos_0__Nummer').value = "email@mail.com"
+document.getElementById('CommunicatieInfos_1__Nummer').value = "+32486000000"
+document.querySelectorAll("[id='InschrijvenAls']")[1].checked = true
+document.querySelectorAll("[id='InschrijvenAls']")[1].dispatchEvent(new CustomEvent("change"))
+document.getElementById('AfdelingsJaarIDs').value = 84684
+await document.getElementsByClassName('ui-button-text-only')[1].click()
+
+document.getElementById('NieuwePersoon_VoorNaam').value = "Patrick"
+document.getElementById('NieuwePersoon_Naam').value = "Star"
+document.getElementById('NieuwePersoon_GeboorteDatum').value = "12/09/2001"
+document.querySelectorAll("[id='NieuwePersoon_Geslacht']")[0].checked = true
+document.getElementById('PostNr').value = "9090"
+document.getElementById('PostNr').dispatchEvent(new CustomEvent("change"))
+await new Promise(r => setTimeout(r, 100))
+document.getElementById('StraatNaamNaam').value = "Kalverhagestraat"
+document.getElementById('HuisNr').value = "116"
+document.getElementById('WoonPlaatsNaam').value = "Melle"
+document.getElementById('CommunicatieInfos_0__Nummer').value = "email@mail.com"
+document.getElementById('CommunicatieInfos_1__Nummer').value = "+32486000001"
+document.querySelectorAll("[id='InschrijvenAls']")[1].checked = true
+document.querySelectorAll("[id='InschrijvenAls']")[1].dispatchEvent(new CustomEvent("change"))
+document.getElementById('AfdelingsJaarIDs').value = 84683
+await document.getElementsByClassName('ui-button-text-only')[1].click()
+
+document.getElementById('NieuwePersoon_VoorNaam').value = "Squidward"
+document.getElementById('NieuwePersoon_Naam').value = "Tentacles"
+document.getElementById('NieuwePersoon_GeboorteDatum').value = "13/09/2001"
+document.querySelectorAll("[id='NieuwePersoon_Geslacht']")[0].checked = true
+document.getElementById('PostNr').value = "9090"
+document.getElementById('PostNr').dispatchEvent(new CustomEvent("change"))
+await new Promise(r => setTimeout(r, 100))
+document.getElementById('StraatNaamNaam').value = "Lindestraat"
+document.getElementById('HuisNr').value = "83"
+document.getElementById('WoonPlaatsNaam').value = "Melle"
+document.getElementById('CommunicatieInfos_0__Nummer').value = "email@mail.com"
+document.getElementById('CommunicatieInfos_1__Nummer').value = "+32486000002"
+document.querySelectorAll("[id='InschrijvenAls']")[1].checked = true
+document.querySelectorAll("[id='InschrijvenAls']")[1].dispatchEvent(new CustomEvent("change"))
+document.getElementById('AfdelingsJaarIDs').value = 84685
+await document.getElementsByClassName('ui-button-text-only')[1].click()
+
+document.getElementById('NieuwePersoon_VoorNaam').value = "Sandy"
+document.getElementById('NieuwePersoon_Naam').value = "Cheeks"
+document.getElementById('NieuwePersoon_GeboorteDatum').value = "14/09/2001"
+document.querySelectorAll("[id='NieuwePersoon_Geslacht']")[0].checked = true
+document.getElementById('PostNr').value = "9070"
+document.getElementById('PostNr').dispatchEvent(new CustomEvent("change"))
+await new Promise(r => setTimeout(r, 100))
+document.getElementById('StraatNaamNaam').value = "Bommels"
+document.getElementById('HuisNr').value = "8"
+document.getElementById('WoonPlaatsNaam').value = "Heusden"
+document.getElementById('CommunicatieInfos_0__Nummer').value = "email@mail.com"
+document.getElementById('CommunicatieInfos_1__Nummer').value = "+32486000003"
+document.querySelectorAll("[id='InschrijvenAls']")[1].checked = true
+document.querySelectorAll("[id='InschrijvenAls']")[1].dispatchEvent(new CustomEvent("change"))
+document.getElementById('AfdelingsJaarIDs').value = 84688
+await document.getElementsByClassName('ui-button-text-only')[1].click()
+
+document.getElementById('NieuwePersoon_VoorNaam').value = "Plankton"
+document.getElementById('NieuwePersoon_Naam').value = "Plankton"
+document.getElementById('NieuwePersoon_GeboorteDatum').value = "15/09/2001"
+document.querySelectorAll("[id='NieuwePersoon_Geslacht']")[0].checked = true
+document.getElementById('PostNr').value = "9090"
+document.getElementById('PostNr').dispatchEvent(new CustomEvent("change"))
+await new Promise(r => setTimeout(r, 100))
+document.getElementById('StraatNaamNaam').value = "Kloosterstraat"
+document.getElementById('HuisNr').value = "54"
+document.getElementById('WoonPlaatsNaam').value = "Melle"
+document.getElementById('CommunicatieInfos_0__Nummer').value = "email@mail.com"
+document.getElementById('CommunicatieInfos_1__Nummer').value = "+32486000004"
+document.querySelectorAll("[id='InschrijvenAls']")[1].checked = true
+document.querySelectorAll("[id='InschrijvenAls']")[1].dispatchEvent(new CustomEvent("change"))
+document.getElementById('AfdelingsJaarIDs').value = 84687
+await document.getElementsByClassName('ui-button-text-only')[1].click()
+
+document.getElementById('NieuwePersoon_VoorNaam').value = "Mr."
+document.getElementById('NieuwePersoon_Naam').value = "Krabs"
+document.getElementById('NieuwePersoon_GeboorteDatum').value = "16/09/2001"
+document.querySelectorAll("[id='NieuwePersoon_Geslacht']")[0].checked = true
+document.getElementById('PostNr').value = "9000"
+document.getElementById('PostNr').dispatchEvent(new CustomEvent("change"))
+await new Promise(r => setTimeout(r, 100))
+document.getElementById('StraatNaamNaam').value = "Vossenstraat"
+document.getElementById('HuisNr').value = "88"
+document.getElementById('WoonPlaatsNaam').value = "Gent"
+document.getElementById('CommunicatieInfos_0__Nummer').value = "email@mail.com"
+document.getElementById('CommunicatieInfos_1__Nummer').value = "+32486000005"
+document.querySelectorAll("[id='InschrijvenAls']")[1].checked = true
+document.querySelectorAll("[id='InschrijvenAls']")[1].dispatchEvent(new CustomEvent("change"))
+document.getElementById('AfdelingsJaarIDs').value = 84686
+await document.getElementsByClassName('ui-button-text-only')[1].click()
+
