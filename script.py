@@ -1,17 +1,18 @@
 import pandas as pd
 import re
 
+# Id's change each year, these might have to be updated manually
 afdelingscode = {
-    'sjamfoeter': 84683,
-    'speelclub': 84684,
-    'rakker': 84685,
-    'topper': 84686,
-    'kerel': 84687,
-    'aspirant': 84688
+    'sjamfoeter': 92660,
+    'speelclub': 92661,
+    'rakker': 92662,
+    'topper': 92663,
+    'kerel': 92664,
+    'aspirant': 92665
 }
     
 
-df = pd.read_excel("Vul_in.xlsx")
+df = pd.read_excel("vul_in.xlsx")
 elementIds = open('elementIds.ini', 'r').readlines() 
 outFile = open('OUT.txt', 'w')
 
@@ -30,7 +31,8 @@ df['Email'] = df['Email'].str.lower()
 df['Afdeling'] = df['Afdeling'].str.lower()
 
 # Split bus and huisnummer
-df['Bus'] = df['Huisnummer'].str.extract(r'\d(\w+)', expand=False)
+df['Huisnummer'] = df['Huisnummer'].apply(str)
+df['Bus'] = df['Huisnummer'].str.extract(r'[^a-zA-Z]*([a-zA-Z]+)', expand=False)
 df['Bus'] = df['Bus'].str.upper()
 df['Huisnummer'] = df['Huisnummer'].apply(str)
 df['Huisnummer'] = df['Huisnummer'].str.replace(r'(\D+)','')
@@ -38,7 +40,6 @@ df['Huisnummer'] = df['Huisnummer'].str.replace(r'(\D+)','')
 # Remove all non digits from postcode
 df['Postcode'] = df['Postcode'].apply(str)
 df['Postcode'] = df['Postcode'].str.replace(r'(\D+)','')
-
 
 for index, row in df.iterrows():
     # voornaam
@@ -93,7 +94,4 @@ for index, row in df.iterrows():
     outFile.write(elementIds[16].strip() + '\n')
     print()
     outFile.write('\n')
-
-# TODO:
-# Documentatie scrijven voor noobs
-# pytoexe
+    
